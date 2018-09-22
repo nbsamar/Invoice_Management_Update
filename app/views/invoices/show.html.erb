@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <table class="table">
+        <thead>
+        <tr><div style="color:#85C5D1"><%= @invoice.reference %></div></tr>
+        <tr><div> <%= @invoice.customer_name %> </div></tr>
+        <tr><div><%= @invoice.brand_manager %></div></tr>
+        <tr><div><%= @invoice.narration %></div></tr>
+        </thead>
+      </table>
+      <table>
+        <thead>
+        <tr>
+          <th>Date</th>
+          <th>Event</th>
+          <th>Amount</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @total = @invoice.collections %>
+        <tr>
+          <td style="padding: 0.2em"><%= @invoice.invoice_date&.strftime("%F") %></td>
+          <td>New Invoice</td>
+          <td><%= @invoice&.amount %></td>
+        </tr>
+        <tr>
+          <td style="padding: 0.2em"><%= @invoice&.collections.last&.collection_date&.strftime("%F") %></td>
+          <td>Collection</td>
+          <td><%= @total&.sum(:amount) %></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Balance</td>
+          <td style="padding: 0.2em"><%= @invoice.amount - @total&.sum(:amount) %></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

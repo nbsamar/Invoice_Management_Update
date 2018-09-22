@@ -1,0 +1,20 @@
+<%= form_with url: invoice_collections_path(), model: @invoice.collections.new, method: :post do |c| %>
+  <div align="center">
+    <h4>Add Collection for Invoice (Ref No: <%= @invoice.reference %>)</h4>
+    <div class="form-group">
+      <%= c.label :Amount %>
+      <%= c.number_field :amount %>
+    </div>
+    <div class="form-group">
+      <%= c.label :Collection_Date %>
+      <%= c.date_field :collection_date %>
+    </div>
+    <div class="form-group">
+      <%= c.label :Reference %>
+      <%= c.text_field :reference, value: @invoice.reference, disabled: true %>
+    </div>
+    <div>
+      <%= c.submit 'Add', class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

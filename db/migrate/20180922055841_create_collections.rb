@@ -5,7 +5,7 @@ class CreateCollections < ActiveRecord::Migration[5.2]
 
       t.integer :amount
       t.string :reference
-      t.datetime :collection_date
+      t.date :collection_date
       t.timestamps
     end
   end

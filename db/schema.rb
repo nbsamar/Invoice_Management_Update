@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2018_09_22_055841) do
     t.bigint "invoice_id"
     t.integer "amount"
     t.string "reference"
-    t.datetime "collection_date"
+    t.date "collection_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["invoice_id"], name: "index_collections_on_invoice_id"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2018_09_22_055841) do
   create_table "invoices", force: :cascade do |t|
     t.string "brand_manager"
     t.string "narration"
-    t.datetime "invoice_date"
+    t.date "invoice_date"
     t.integer "amount"
     t.string "customer_name"
     t.string "reference"

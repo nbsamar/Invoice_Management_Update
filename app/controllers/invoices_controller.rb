@@ -18,11 +18,12 @@ class InvoicesController < ApplicationController
   end
 
   def pending
-    @invoices = Invoice.includes(:collections).where("amount < ?", 0).page(2)
+    @invoices = Invoice.includes(:collections).where("amount > ?", 0).page(5)
   end
 
   def collected
-    @invoices = Invoice.includes(:collections).where("amount > ?", 0).page(2)
+    @invoices = Invoice.includes(:collections).where("amount < ?", 0).page(2)
+    # @invoices = Invoice.includes(:collections)
   end
 
   private

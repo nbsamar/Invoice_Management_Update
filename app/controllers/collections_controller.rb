@@ -11,7 +11,7 @@ class CollectionsController < ApplicationController
   def create
     @invoice = Invoice.find(params[:invoice_id])
     @invoice.collections.create!(collection_params)
-    redirect_to invoices_path()
+    redirect_to invoices_path
   end
 
   private

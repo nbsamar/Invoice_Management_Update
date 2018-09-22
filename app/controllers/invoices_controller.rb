@@ -1,6 +1,9 @@
 class InvoicesController < ApplicationController
+
+  before_action :set_invoices
+
   def index
-    @invoices = Invoice.all.page(10)
+
   end
 
   def new
@@ -18,12 +21,11 @@ class InvoicesController < ApplicationController
   end
 
   def pending
-    @invoices = Invoice.includes(:collections).where("amount > ?", 0).page(5)
+    # @invoices = Invoice.includes(:collections).where("amount > ?", 0).page(5)
   end
 
   def collected
-    @invoices = Invoice.includes(:collections).where("amount < ?", 0).page(2)
-    # @invoices = Invoice.includes(:collections)
+    # @invoices = Invoice.includes(:collections).where("amount < ?", 0).page(2)
   end
 
   private
@@ -31,5 +33,9 @@ class InvoicesController < ApplicationController
   def invoice_params
     params.require(:invoice).permit(:brand_manager, :narration, :invoice_date,
                                     :amount, :customer_name, :reference)
+  end
+
+  def set_invoices
+    @invoices = Invoice.all.page(10)
   end
 end

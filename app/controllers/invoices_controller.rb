@@ -20,15 +20,12 @@ class InvoicesController < ApplicationController
   end
 
   def pending
-    # @invoices = Invoice.includes(:collections).where("amount > ?", 0).page(5)
-    # binding.pry
     invoices_with_due = ActiveRecord::Base.connection.execute("select * from (select inc.id, inc.amount, inc.reference, co.invoice_id as co_id, co.amount as co_amnt, co.reference as co_ref,(inc.amount - co.amount) as due from collections co, invoices inc where co.invoice_id = inc.id) z where due > 0;")
     @invoices = (invoices_with_due.to_a)
     @invoices = Kaminari.paginate_array(@invoices).page(params[:page]).per(15)
   end
 
   def collected
-    # @invoices = Invoice.includes(:collections).where("amount < ?", 0).page(2)
     invoices_with_due = ActiveRecord::Base.connection.execute("select * from (select inc.id, inc.amount, inc.reference, co.invoice_id as co_id, co.amount as co_amnt, co.reference as co_ref,(inc.amount - co.amount) as due from collections co, invoices inc where co.invoice_id = inc.id) z where due = 0;")
     @invoices = (invoices_with_due.to_a)
     @invoices = Kaminari.paginate_array(@invoices).page(params[:page]).per(15)

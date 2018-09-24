@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033db809-83cc-499b-9c62-7a6057131495" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/invoices_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/invoices_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/collection.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/collection.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/invoice.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/invoice.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -18,89 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="invoices_controller.rb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/invoices_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invoice.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/invoices/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pending.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/invoices/pending.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/invoices/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/invoices/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_invoices.html.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/invoices/_invoices.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -123,9 +44,7 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/db/seeds/collections.json" />
-        <option value="$PROJECT_DIR$/app/models/invoice.rb" />
         <option value="$PROJECT_DIR$/db/seeds/invoices.json" />
-        <option value="$PROJECT_DIR$/app/models/collection.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20180922055724_create_invoices.rb" />
@@ -141,6 +60,8 @@
         <option value="$PROJECT_DIR$/app/views/invoices/pending.html.erb" />
         <option value="$PROJECT_DIR$/app/views/invoices/collected.html.erb" />
         <option value="$PROJECT_DIR$/app/views/collections/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/invoice.rb" />
+        <option value="$PROJECT_DIR$/app/models/collection.rb" />
         <option value="$PROJECT_DIR$/app/controllers/invoices_controller.rb" />
       </list>
     </option>
@@ -169,8 +90,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -183,27 +102,16 @@
               <item name="axb_retest" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="axb_retest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="axb_retest" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="axb_retest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="axb_retest" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="coll.js&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds/collections.json&#10;coll&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/collected.html.erb&#10;invoi.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/models/invoice.rb&#10;gemf&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/Gemfile&#10;seeds&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds.rb&#10;coll.json&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds/collections.json&#10;inde&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/index.html.erb&#10;sch&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/schema.rb&#10;inv&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/_invoices.html.erb&#10;pen&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/pending.html.erb&#10;rou&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/routes.rb&#10;ind&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/index.html.erb&#10;route&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/routes.rb&#10;app.scss&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/assets/stylesheets/application.scss&#10;cre&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055724_create_invoices.rb&#10;see&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds.rb&#10;sc&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/schema.rb&#10;col.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/models/collection.rb&#10;schema.rb&#9;FILE&#9;file:///Users/nbsamar/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/schema.rb&#10;sche.r&#9;FILE&#9;file:///Users/nbsamar/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/nokogiri-1.8.4/lib/nokogiri/xml/schema.rb&#10;data.yml&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/database.yml&#10;seeds.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds.rb&#10;create&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055841_create_collections.rb&#10;creat&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055724_create_invoices.rb&#10;db/migrate/20180922055724_create_invoices.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055724_create_invoices.rb&#10;route.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/routes.rb&#10;app.js&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/assets/javascripts/application.js" />
+    <property name="SearchEverywhereHistoryKey" value="coll.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/models/collection.rb&#10;coll.js&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds/collections.json&#10;coll&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/collected.html.erb&#10;invoi.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/models/invoice.rb&#10;gemf&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/Gemfile&#10;seeds&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds.rb&#10;coll.json&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds/collections.json&#10;inde&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/index.html.erb&#10;sch&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/schema.rb&#10;inv&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/_invoices.html.erb&#10;pen&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/pending.html.erb&#10;rou&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/routes.rb&#10;ind&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/views/invoices/index.html.erb&#10;route&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/routes.rb&#10;app.scss&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/assets/stylesheets/application.scss&#10;cre&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055724_create_invoices.rb&#10;see&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds.rb&#10;sc&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/schema.rb&#10;col.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/models/collection.rb&#10;schema.rb&#9;FILE&#9;file:///Users/nbsamar/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/activerecord-5.2.1/lib/active_record/schema.rb&#10;sche.r&#9;FILE&#9;file:///Users/nbsamar/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/nokogiri-1.8.4/lib/nokogiri/xml/schema.rb&#10;data.yml&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/database.yml&#10;seeds.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/seeds.rb&#10;create&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055841_create_collections.rb&#10;creat&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055724_create_invoices.rb&#10;db/migrate/20180922055724_create_invoices.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/db/migrate/20180922055724_create_invoices.rb&#10;route.rb&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/config/routes.rb&#10;app.js&#9;FILE&#9;file:///Users/nbsamar/nayab/axb_retest/app/assets/javascripts/application.js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -332,36 +240,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537592413647</updated>
-      <workItem from="1537592415093" duration="30089000" />
+      <workItem from="1537592415093" duration="30557000" />
+      <workItem from="1537780429939" duration="610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30089000" />
+    <option name="totallyTimeSpent" value="31167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19884726" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" weight="0.3298969" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3298969" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19884726" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298969" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/collection.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -513,9 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="9" selection-start-column="9" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,9 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,26 +450,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="e#152#172#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/invoices/pending.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
@@ -588,16 +471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
           <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/invoices/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -608,10 +481,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/invoices/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/invoices_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="560">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/invoice.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="90" selection-start-line="1" selection-start-column="90" selection-end-line="1" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/collection.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

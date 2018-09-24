@@ -1,31 +1,34 @@
 <%= form_with url: invoices_path, model: Invoice.new, method: :post do |i| %>
-  <div align="center" class="card">
-    <div class="form-group">
-      <%= i.label :Brand_Manager %><br>
-      <%= i.text_field :brand_manager %>
-    </div>
-    <div class="form-group">
-      <%= i.label :Narration %><br>
-      <%= i.text_field :narration %>
-    </div>
-    <div class="form-group">
-      <%= i.label :Invoice_Date %><br>
-      <%= i.date_field :invoice_date %>
-    </div>
-    <div class="form-group">
-      <%= i.label :Amount %><br>
-      <%= i.number_field :amount %>
-    </div>
-    <div class="form-group">
-      <%= i.label :Customer_Name %><br>
-      <%= i.text_field :customer_name %>
-    </div>
-    <div class="form-group">
-      <%= i.label :reference %><br>
-      <%= i.text_field :reference %>
-    </div>
-    <div>
-      <%= i.submit 'Submit', class: 'btn btn-primary' %>
+  <div class="row">
+    <h4 style="margin: 3rem">New Bill</h4>
+    <div class="col-md-4" style="margin: 1rem">
+      <div class="form-group">
+        <%= i.label :Brand_Manager %><br>
+        <%= i.text_field :brand_manager, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= i.label :Narration %><br>
+        <%= i.text_field :narration, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= i.label :Invoice_Date %><br>
+        <%= i.date_field :invoice_date, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= i.label :Amount %><br>
+        <%= i.number_field :amount, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= i.label :Customer_Name %><br>
+        <%= i.text_field :customer_name, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= i.label :reference %><br>
+        <%= i.text_field :reference, class: 'form-control' %>
+      </div>
+      <div>
+        <%= i.submit 'Submit', class: 'btn btn-primary' %>
+      </div>
     </div>
   </div>
 <% end %>

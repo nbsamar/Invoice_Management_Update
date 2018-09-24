@@ -1,54 +1,53 @@
-<div class="row justify-content-center">
-  <div class="col-md-10">
-    <div class="row">
-      <div class="col-md-4"><%= link_to "Add a New Bill", new_invoice_path, class: "btn btn-primary" %></div>
-      <div class="col-md-4"><%= link_to "Show Pending Bills", pending_invoices_path, class: "btn btn-primary" %></div>
-      <div class="col-md-4"><%= link_to "Show Collected Bills", collected_invoices_path, class: "btn btn-primary" %></div>
-    </div>
-    <div class="card">
-      <h2 class="card-header text-center">
-        <div class="float-left"> List Of Invoices</div>
-      </h2>
-      <table class="table">
-        <thead>
-        <tr>
-          <th>Reference</th>
-          <th>Invoice Date</th>
-          <th>Customer</th>
-          <th>Brand Manager</th>
-          <th>Narration</th>
-          <th>Amount</th>
-          <th>Total Collection</th>
-          <th>Balance Due</th>
-          <th>Add Collection</th>
-        </tr>
-        </thead>
-        <tbody>
-        <% @invoices.each do |invoice| %>
-          <% inv_obj = Invoice.find(invoice["id"]) %>
-          <%# binding.pry %>
-          <%# balance_due = (invoice["amount"] - inv_obj.collections.sum(:amount)) %>
-          <% balance_due = invoice["due"] %>
-          <%# if balance_due > 0 %>
+<div class="container-fluid" style="margin: 1rem;">
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4"><%= link_to "Add a New Bill", new_invoice_path, class: "btn btn-primary" %></div>
+        <div class="col-md-4"><%= link_to "Show Pending Bills", pending_invoices_path, class: "btn btn-primary" %></div>
+        <div class="col-md-4"><%= link_to "Show Collected Bills", collected_invoices_path, class: "btn btn-primary" %></div>
+      </div>
+      <div class="card">
+        <h2 class="card-header text-center">
+          <div class="float-left"> List Of Invoices</div>
+        </h2>
+        <table class="table">
+          <thead>
           <tr>
-            <td><%= link_to inv_obj.reference, invoice_path(inv_obj) %></td>
-            <td><%= inv_obj.invoice_date.strftime("%F") %></td>
-            <td><%= inv_obj.customer_name %></td>
-            <td><%= inv_obj.brand_manager %></td>
-            <td><%= inv_obj.narration %></td>
-            <td><%= inv_obj.amount %></td>
-            <td><%= inv_obj.collections.sum(:amount) %></td>
-            <td><%= balance_due %></td>
-            <td><%= link_to "Add", new_invoice_collection_path(inv_obj) %></td>
+            <th>Reference</th>
+            <th>Invoice Date</th>
+            <th>Customer</th>
+            <th>Brand Manager</th>
+            <th>Narration</th>
+            <th>Amount</th>
+            <th>Total Collection</th>
+            <th>Balance Due</th>
+            <th>Add Collection</th>
           </tr>
-          <%# end %>
-        <% end %>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+          <%# binding.pry %>
+          <% @invoices.each do |invoice| %>
+            <% inv_obj = Invoice.find(invoice["id"]) %>
+            <% balance_due = invoice["due"] %>
+            <tr>
+              <td><%= link_to inv_obj.reference, invoice_path(inv_obj) %></td>
+              <td><%= inv_obj.invoice_date.strftime("%F") %></td>
+              <td><%= inv_obj.customer_name %></td>
+              <td><%= inv_obj.brand_manager %></td>
+              <td><%= inv_obj.narration %></td>
+              <td><%= inv_obj.amount %></td>
+              <td><%= inv_obj.collections.sum(:amount) %></td>
+              <td><%= balance_due %></td>
+              <td><%= link_to "Add", new_invoice_collection_path(inv_obj) %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
 
-<!--<div align="center">-->
-<%#= paginate @invoices %>
-<!--</div>-->
+<div align="center">
+  <%= paginate @invoices %>
+</div>

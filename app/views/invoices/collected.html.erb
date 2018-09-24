@@ -25,27 +25,24 @@
         </thead>
         <tbody>
         <% @invoices.each do |invoice| %>
-          <% balance_due = (invoice.amount - invoice.collections.sum(:amount)) %>
-          <% if balance_due == 0 %>
-            <tr>
-              <td><%= link_to invoice.reference, invoice_path(invoice) %></td>
-              <td><%= invoice.invoice_date.strftime("%F") %></td>
-              <td><%= invoice.customer_name %></td>
-              <td><%= invoice.brand_manager %></td>
-              <td><%= invoice.narration %></td>
-              <td><%= invoice.amount %></td>
-              <td><%= invoice.collections.sum(:amount) %></td>
-              <td><%= balance_due %></td>
-              <td><%= link_to "Add", new_invoice_collection_path(invoice) %></td>
-            </tr>
-          <% end %>
+          <% inv_obj = Invoice.find(invoice["id"]) %>
+          <% balance_due = invoice["due"] %>
+          <%# if balance_due == 0 %>
+          <tr>
+            <td><%= link_to inv_obj.reference, invoice_path(inv_obj) %></td>
+            <td><%= inv_obj.invoice_date.strftime("%F") %></td>
+            <td><%= inv_obj.customer_name %></td>
+            <td><%= inv_obj.brand_manager %></td>
+            <td><%= inv_obj.narration %></td>
+            <td><%= inv_obj.amount %></td>
+            <td><%= inv_obj.collections.sum(:amount) %></td>
+            <td><%= balance_due %></td>
+            <td><%= link_to "Add", new_invoice_collection_path(inv_obj) %></td>
+          </tr>
+          <%# end %>
         <% end %>
         </tbody>
       </table>
     </div>
   </div>
-</div>
-
-<div align="center">
-  <%= paginate @invoices %>
 </div>
